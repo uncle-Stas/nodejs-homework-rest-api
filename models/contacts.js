@@ -52,7 +52,7 @@ const updateContact = async (contactId, body) => {
     return null;
   }
 
-  data[index] = { contactId, ...body };
+  data[index] = { id: contactId, ...body };
   await fs.writeFile(filePath, JSON.stringify(data, null, 2));
 
   return data[index];
