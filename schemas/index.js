@@ -1,5 +1,3 @@
-const addJoiSchema = require('./contacts');
+const contactsJoiSchemas = require('./contacts');
 
-module.exports = {
-  addJoiSchema,
-};
+module.exports = contactsJoiSchemas;
