@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
-const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,9}$/;
+const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s/0-9]*$/;
 const emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
 
 const contactSchema = new Schema(
